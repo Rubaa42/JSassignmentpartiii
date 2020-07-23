@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body>
+    <!------------------  CHP 43 TO 48 ----------------->
+    <!-- QS NO 1 -->
+    <a href="#" onclick="alert('Hello!')" style="color: rebeccapurple;">CLICK</a>
+
+    <!-- QS NO 2 -->
+    <div>
+        <h1 style="color: blue;">Mobile Phone Lookup</h1>
+       <div style="display: inline-block;" onclick="mbl()"><img src="images/iphone2.jpg" alt="" style="height:170PX;width: 130PX;  border: 2px solid blue; padding: 10px; margin: 10px;"><p style="color: blue; margin-left: 10px;" >iPhone6Plus</p></div>
+       
+       <div  style="display: inline-block;"  onclick="mbl()"><img src="images/galaxy.jpg" alt="" style="height:170PX;width: 130PX; border: 2px solid blue;  padding: 10px; margin: 10px;"><p style="color: blue; margin-left: 10px;" >GalaxyS6EdgePlus</p></div>
+       
+       <div style=" display: inline-block;"  onclick="mbl()"><img src="images/v10.jpg" alt="" style="height:170PX;width: 130PX; border: 2px solid blue;  padding: 10px; margin: 10px;"><p style="color: blue; margin-left: 22px;">V10</p></div>
+       
+       <div style=" display: inline-block;"  onclick="mbl()"><img src="images/IP8.jpg" alt="" style="height:170PX;width: 110PX; border: 2px solid blue;  padding: 10px; margin: 10px;"><p style="color: blue; margin-left: 18px;" >HuaweiP8</p></div>
+       
+    </div>
+
+    <!-- QS NO 3 -->
+    <div>
+        <table>
+            <tr>
+                <th style="font-size: larger;">Index</th>
+                <th style="font-size: larger;">Name</th>
+                <th style="font-size: larger;">Class</th>
+            </tr>
+            <tr id="row1">
+                <td id="in1">0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="button1() " >Delete</button></td>
+            </tr>
+            <tr id="row2">
+                <td id="in2">1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button  onclick="button2()">Delete</button></td>
+            </tr>
+            <tr id="row3">
+                <td id="in3">2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button  onclick="button3()">Delete</button></td>
+            </tr>
+            <tr id="row4">
+                <td id="in4">3</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button  onclick="button4()">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- QS NO 4 -->
+    <div>
+        <img src="images/car1.jpg" alt="" onmouseover="src= 'images/car2.jpg'" onmouseout="src='images/car1.jpg'">
+    </div>
+
+    <!-- QS NO 5 -->
+    <div style="margin-top: 10px; padding: 20px;width: 80%;">
+        <div style=" background-color:black; color: white; width: 8.9%; height: 40px; padding: 10px; align-items: center; text-align: center;">
+            <span style="font-weight: bold;" id="count">0</span>
+        </div>
+        <div style="margin-top: 10px;">
+            <button onclick="inc()">Increase</button>
+            <button onclick="dec()">Decrease</button>
+        </div>
+    </div>
+
+    <!-------------------  CHP 49 TO 52  ----------------->
+    <!--      QS NO 1 -->
+    <div style="margin-top: 30px; border: 2px solid  rgb(44, 44, 202); width: 30%; margin-left: 30%; height:auto; padding: 15px;">
+        <form action="#">
+            <h2 style="color: rgb(44, 44, 202);">SignUp :</h2>
+            <input type="text" placeholder="First Name" style="height: 25px;" id="firstname">
+            <input type="text" placeholder="Last Name" style="height: 25px;" id="lastname">
+            <input type="text" placeholder="Email" style="width: 88%; margin-top: 10px; height: 25px;" id="email">
+            <input type="password" placeholder="Password" style="width: 88%; margin-top: 10px; height: 25px;" id="pass">
+            <input type="password" placeholder="Confirm Password" style="width: 88%; margin-top: 10px; height: 25px;" id="confirm">
+        </form>
+        <button href="JavaScript:void(0)"style="font-weight: bold; background-color:rgb(44, 44, 202); color: white;margin-top: 20px; border: 2px solid rgb(44, 44, 202); outline: none;" onClick="submit()">SUBMIT</button>
+    </div>
+
+
+    <!--   QS NO 2   -->
+    <div style="border: 2px solid black; width: 70%; margin: 30px auto; height: auto; padding: 20px;">
+        <h3>Content Area</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, est! Adipisci eaque praesentium eveniet, eligendi accusantium quaerat optio nostrum dignissimos quos repellat, placeat, atque libero est numquam. Eum, repudiandae modi.</p>
+        
+        <div style=" height:auto">
+            <h4>Item Details</h4>
+            <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas dolores saepe libero perspiciatis similique. Perferendis, et! Nostrum itaque delectus dolor, sit odio fuga alias voluptatibus ea ullam, blanditiis commodi?  <a href="JavaScript:void(0)" style="font-weight: bold;" id="link" onclick="para()">Read More</a></p>
+        </div>
+    </div>
+
+    <!--     QS NO 3 -->
+    <form action="JavaScript:void(0)">
+        <table>
+            <tr>
+                <th style="font-size: larger;">Index</th>
+                <th style="font-size: larger;">Name</th>
+                <th style="font-size: larger;">Class</th> 
+            </tr>
+            <tr id="no1">
+                <td>0</td>
+                <td><input type="text" id="txt1"></td>
+                <td><input type="text" id="txt2"></td>
+                <td onclick="edit1()"><button>Edit</button></td>
+                <td><button  onclick="delete1('no1')">Delete</button></td>
+            </tr>
+            <tr id="no2">
+                <td>1</td>
+                <td><input type="text" id="txt3"></td>
+                <td><input type="text" id="txt4"></td>
+                <td onclick="edit2()"><button>Edit</button></td>
+                <td><button  onclick="delete1('no2')">Delete</button></td>
+            </tr>
+            <tr id="no3">
+                <td>2</td>
+                <td><input type="text" id="txt5"></td>
+                <td><input type="text" id="txt6"></td>
+                <td onclick="edit3()"><button>Edit</button></td>
+                <td><button  onclick="delete1('no3')">Delete</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="JavaScript:void(0)"  style="visibility: hidden;">
+        <table style="margin-top: 20px;">
+            <tr  id="hidden1">
+                <td>0</td>
+                <td><input type="text" id="hidtxt1" style="margin-left: 40px;"></td>
+                <td><input type="text"  id="hidtxt2"></td>
+            </tr>
+            <tr id="hidden2" >
+                <td>1</td>
+                <td><input type="text" id="hidtxt3"  style="margin-left: 40px;"></td>
+                <td><input type="text" id="hidtxt4"></td>
+            </tr>
+            <tr id="hidden3" >
+                <td>2</td>
+                <td><input type="text" id="hidtxt5"  style="margin-left: 40px;"></td>
+                <td><input type="text" id="hidtxt6"></td>
+            </tr>
+        </table>
+    </form>
+
+    
+
+    <!----------------------------- CHP 53 TO 58 ---------------------------------->
+    <!--     QS NO 1   -->
+    <!-- Button trigger modal -->
+    <div >
+        <img  width="300px" height="200px" onclick=" showImage(this)" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" class="img" src="images/img1.jpg" alt="">
+        <img  width="300px" height="200px" onclick=" showImage(this)"style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" class="img"  src="images/img2.jpg"alt="">
+        <img  width="300px" height="200px" onclick=" showImage(this)" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" class="img" src="images/img3.png" alt="">
+        <img  width="300px" height="200px" onclick=" showImage(this)"style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal" class="img"  src="images/img4.jpg"alt="">
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img style="width: 450px; height: 300px;" src="" alt="" id="modalImage" >
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   QS NO 2     -->
+    <div style="margin: 50px auto; border: 2px solid grey; width: 70%; padding: 20px;">
+        <p style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;"  id="para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio, vel repellat et neque rerum 
+            earum aliquam ad, repudiandae iusto deleniti officiis! Aliquam ab doloremque distinctio tempora 
+            voluptatum atque aliquid!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Suscipit ex in soluta sapiente, alias at voluptas nulla aspernatur aut sint repellat reprehenderit, 
+            eveniet, natus perferendis? Ipsa voluptatum hic laudantium sit.</p>
+            <button style="margin-left: 20em; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;" onclick="zoomIn()">Zoom In</button>
+            <button onclick="zoomOut()" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">Zoom Out</button>
+    </div>
+
+    <!----------------------- CHP 58 TO 67 --------------------------->
+    <!--  QS NO 1 -->
+    <div style="margin-top: 50px;">
+        <h1> DOM </h1>
+        <div id = "form-content" class="content">
+            <label for="first-name">First Name</label><input type="text" id="first-name" /><label for="last-name">Last Name</label><input type="text" id="last-name" /><label for="email">Email</label><input type="text" id="Email" />
+        </div>
+        <div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div>
+    
+    </div>
+        
+    
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
